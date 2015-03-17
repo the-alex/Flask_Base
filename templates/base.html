@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    {% block head %}
+        <link rel="stylesheet" href="static/css/style.css"/>
+    {% endblock %}
+    <title>{% block title %}{% endblock %} -- Basic Flask Template</title>
+</head>
+<body>
+
+    <div class="header">
+
+    </div>
+
+    <div class="content">
+        {% block content %}
+        {% endblock %}
+    </div>
+
+
+    {% block footer %}
+    <div class="footer">
+        <h3>Footer Goes Here</h3>
+    </div>
+    {% endblock %}
+
+</body>
+</html>
